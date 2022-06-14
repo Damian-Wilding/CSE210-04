@@ -121,11 +121,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\wildm\\Documents\\SEMESTER 6\\CLASSES class\\C Sharp\\cse210-student-articulate-csharp-complete\\Unit04\\Unit04.csproj",
+      "projectUniqueName": "C:\\Users\\wildm\\Documents\\SEMESTER 6\\CLASSES class\\C Sharp\\CSE210-04\\Unit04.csproj",
       "projectName": "Unit04",
-      "projectPath": "c:\\Users\\wildm\\Documents\\SEMESTER 6\\CLASSES class\\C Sharp\\cse210-student-articulate-csharp-complete\\Unit04\\Unit04.csproj",
+      "projectPath": "C:\\Users\\wildm\\Documents\\SEMESTER 6\\CLASSES class\\C Sharp\\CSE210-04\\Unit04.csproj",
       "packagesPath": "C:\\Users\\wildm\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\wildm\\Documents\\SEMESTER 6\\CLASSES class\\C Sharp\\cse210-student-articulate-csharp-complete\\Unit04\\obj\\",
+      "outputPath": "C:\\Users\\wildm\\Documents\\SEMESTER 6\\CLASSES class\\C Sharp\\CSE210-04\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\wildm\\AppData\\Roaming\\NuGet\\NuGet.Config"

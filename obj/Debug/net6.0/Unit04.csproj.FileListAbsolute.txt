@@ -1,0 +1,5 @@
+C:\Users\wildm\Documents\SEMESTER 6\CLASSES class\C Sharp\CSE210-04\obj\Debug\net6.0\Unit04.csproj.AssemblyReference.cache
+C:\Users\wildm\Documents\SEMESTER 6\CLASSES class\C Sharp\CSE210-04\obj\Debug\net6.0\Unit04.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wildm\Documents\SEMESTER 6\CLASSES class\C Sharp\CSE210-04\obj\Debug\net6.0\Unit04.AssemblyInfoInputs.cache
+C:\Users\wildm\Documents\SEMESTER 6\CLASSES class\C Sharp\CSE210-04\obj\Debug\net6.0\Unit04.AssemblyInfo.cs
+C:\Users\wildm\Documents\SEMESTER 6\CLASSES class\C Sharp\CSE210-04\obj\Debug\net6.0\Unit04.csproj.CoreCompileInputs.cache
