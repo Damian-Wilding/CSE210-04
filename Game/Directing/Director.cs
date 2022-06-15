@@ -80,6 +80,31 @@ namespace Unit04.Game.Directing
                     banner.SetText(message);
                 }
             } 
+            Random random = new Random();
+            for (int i = 0; i < 5; i++)
+            {
+                string text = ((char)random.Next(33, 34)).ToString();
+                string message = score;
+
+                int x = random.Next(1, Program.COLS);
+                int y = random.Next(1, Program.ROWS);
+                Point position = new Point(x, y);
+                position = position.Scale(Program.CELL_SIZE);
+
+                int r = random.Next(0, 256);
+                int g = random.Next(0, 256);
+                int b = random.Next(0, 256);
+                Color color = new Color(r, g, b);
+
+                Rock rock = new Rock();
+                rock.SetText(text);
+                rock.SetFontSize(Program.FONT_SIZE);
+                rock.SetVelocity(velocity);
+                rock.SetColor(color);
+                rock.SetPosition(position);
+                // rock.SetMessage(message); //score
+                cast.AddActor("rocks", rock);
+            }
         }
 
         /// <summary>
