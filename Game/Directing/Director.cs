@@ -78,10 +78,10 @@ namespace Unit04.Game.Directing
             {
                 if (player.GetPosition().Equals(actor.GetPosition()))
                 {
-                    Artifact artifact = (Artifact) actor;
-                    int points = rock.GetPoints();
+                    Rock rock = (Rock) actor;
+                    //int points = rock.GetPoints();
                     this.score = rock.SetScore(this.score, 1);
-                    banner.SetText(message);
+                    //banner.SetText(message);
                 }
             } 
             Random random = new Random();
