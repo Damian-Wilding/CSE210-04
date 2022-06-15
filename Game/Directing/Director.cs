@@ -106,13 +106,13 @@ namespace Unit04.Game.Directing
             }
 
             System.Random random = new System.Random();
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 1; i++)
             {
                 // string text = ((char)random.Next(33, 34)).ToString();
                 //string message = score;
 
                 int x = random.Next(1, Program.COLS);
-                int y = random.Next(1, Program.ROWS);
+                int y = maxY;
                 Point position = new Point(x, y);
                 position = position.Scale(Program.CELL_SIZE);
 
@@ -131,13 +131,13 @@ namespace Unit04.Game.Directing
                 cast.AddActor("rocks", rock);
                 
             }
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 1; i++)
             {
                 // string text = ((char)random.Next(33, 34)).ToString();
                 //string message = score;
 
                 int x = random.Next(1, Program.COLS);
-                int y = random.Next(1, Program.ROWS);
+                int y = maxY;
                 Point position = new Point(x, y);
                 position = position.Scale(Program.CELL_SIZE);
 
