@@ -65,11 +65,11 @@ namespace Unit04.Game.Directing
         {
             Actor banner = cast.GetFirstActor("banner");
             Actor player = cast.GetFirstActor("player");
-            // this line needs changed \/
+            
             List<Actor> rocks = cast.GetActors("rocks");
             List<Actor> gems = cast.GetActors("gems");
 
-            banner.SetText("");
+            banner.SetText(score);
             int maxX = videoService.GetWidth();
             int maxY = videoService.GetHeight();
             player.MoveNext(maxX, maxY);
