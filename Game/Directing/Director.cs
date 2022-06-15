@@ -75,20 +75,26 @@ namespace Unit04.Game.Directing
             int maxX = videoService.GetWidth();
             int maxY = videoService.GetHeight();
             player.MoveNext(maxX, maxY);
+            //rock.Movenext()
 
+            //iterates through rocks
             foreach (Actor actor in rocks)
             {
+                //handles the score if the player touches a rock
                 if (player.GetPosition().Equals(actor.GetPosition()))
                 {
                     Rock rock = (Rock) actor;
                     //int points = rock.GetPoints();
                     this.score = rock.SetScore(this.score, 1);
-                    //banner.SetText(message);
+                    //banner.SetText(message);  
                 }
+                actor.MoveNext(maxX, maxY);
             }
-
+            
+            //iterates though gems
             foreach (Actor actor in gems)
             {
+                //handles the score if the player touches a gem
                 if (player.GetPosition().Equals(actor.GetPosition()))
                 {
                     Gem gem = (Gem) actor;
@@ -96,6 +102,7 @@ namespace Unit04.Game.Directing
                     this.score = gem.SetScore(this.score, 1);
                     //banner.SetText(message);
                 }
+                actor.MoveNext(maxX, maxY);
             }
 
             System.Random random = new System.Random();
@@ -117,12 +124,12 @@ namespace Unit04.Game.Directing
                 Rock rock = new Rock();
                 rock.SetText("0");
                 rock.SetFontSize(Program.FONT_SIZE);
-                rock.SetVelocity(new Point(0, -1));
+                rock.SetVelocity(new Point(0, 1));
                 rock.SetColor(color);
                 rock.SetPosition(position);
                 // rock.SetMessage(message); //score
                 cast.AddActor("rocks", rock);
-                rock.MoveNext(maxX, maxY);
+                
             }
             for (int i = 0; i < 5; i++)
             {
@@ -142,12 +149,16 @@ namespace Unit04.Game.Directing
                 Gem gem = new Gem();
                 gem.SetText("*");
                 gem.SetFontSize(Program.FONT_SIZE);
-                gem.SetVelocity(new Point(0, -1));
+                gem.SetVelocity(new Point(0, 1));
                 gem.SetColor(color);
                 gem.SetPosition(position);
                 // rock.SetMessage(message); //score
                 cast.AddActor("gems", gem);
             }
+            //foreach (Actor actor in rocks)
+            //{
+            //    MoveNext(maxX, maxY);
+            //}
         }
 
         /// <summary>
