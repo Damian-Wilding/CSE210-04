@@ -107,6 +107,30 @@ namespace Unit04.Game.Directing
                 // rock.SetMessage(message); //score
                 cast.AddActor("rocks", rock);
             }
+            for (int i = 0; i < 5; i++)
+            {
+                // string text = ((char)random.Next(33, 34)).ToString();
+                string message = score;
+
+                int x = random.Next(1, Program.COLS);
+                int y = random.Next(1, Program.ROWS);
+                Point position = new Point(x, y);
+                position = position.Scale(Program.CELL_SIZE);
+
+                int r = random.Next(0, 256);
+                int g = random.Next(0, 256);
+                int b = random.Next(0, 256);
+                Color color = new Color(r, g, b);
+
+                Gem gem = new Gem();
+                gem.SetText("*");
+                gem.SetFontSize(Program.FONT_SIZE);
+                gem.SetVelocity(velocity);
+                gem.SetColor(color);
+                gem.SetPosition(position);
+                // rock.SetMessage(message); //score
+                cast.AddActor("gems", gem);
+            }
         }
 
         /// <summary>
