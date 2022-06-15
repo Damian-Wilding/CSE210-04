@@ -84,7 +84,7 @@ namespace Unit04.Game.Directing
             Random random = new Random();
             for (int i = 0; i < 5; i++)
             {
-                string text = ((char)random.Next(33, 34)).ToString();
+                // string text = ((char)random.Next(33, 34)).ToString();
                 string message = score;
 
                 int x = random.Next(1, Program.COLS);
@@ -98,7 +98,7 @@ namespace Unit04.Game.Directing
                 Color color = new Color(r, g, b);
 
                 Rock rock = new Rock();
-                rock.SetText(text);
+                rock.SetText("0");
                 rock.SetFontSize(Program.FONT_SIZE);
                 rock.SetVelocity(velocity);
                 rock.SetColor(color);
