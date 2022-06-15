@@ -116,19 +116,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\wildm\\.nuget\\packages\\": {}
+    "C:\\Users\\ckcom\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\wildm\\Documents\\SEMESTER 6\\CLASSES class\\C Sharp\\CSE210-04\\Unit04.csproj",
+      "projectUniqueName": "C:\\Users\\ckcom\\OneDrive\\Desktop\\CSE210\\CSE210-04-1\\Unit04.csproj",
       "projectName": "Unit04",
-      "projectPath": "C:\\Users\\wildm\\Documents\\SEMESTER 6\\CLASSES class\\C Sharp\\CSE210-04\\Unit04.csproj",
-      "packagesPath": "C:\\Users\\wildm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\wildm\\Documents\\SEMESTER 6\\CLASSES class\\C Sharp\\CSE210-04\\obj\\",
+      "projectPath": "C:\\Users\\ckcom\\OneDrive\\Desktop\\CSE210\\CSE210-04-1\\Unit04.csproj",
+      "packagesPath": "C:\\Users\\ckcom\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ckcom\\OneDrive\\Desktop\\CSE210\\CSE210-04-1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\wildm\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\ckcom\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
