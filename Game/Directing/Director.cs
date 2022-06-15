@@ -63,13 +63,14 @@ namespace Unit04.Game.Directing
         private void DoUpdates(Cast cast)
         {
             Actor banner = cast.GetFirstActor("banner");
-            Actor robot = cast.GetFirstActor("robot");
+            Actor player = cast.GetFirstActor("player");
+            // this line needs changed \/
             List<Actor> artifacts = cast.GetActors("artifacts");
 
             banner.SetText("");
             int maxX = videoService.GetWidth();
             int maxY = videoService.GetHeight();
-            robot.MoveNext(maxX, maxY);
+            player.MoveNext(maxX, maxY);
 
             foreach (Actor actor in artifacts)
             {
