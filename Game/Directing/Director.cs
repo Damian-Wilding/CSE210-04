@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using Unit04.Game.Casting;
 using Unit04.Game.Services;
-using Unit04.Game.Gem;
-using Unit04.Game.Rock;
+//using Unit04.Game.Gem;
+//using Unit04.Game.Rock;
 
 
 namespace Unit04.Game.Directing
