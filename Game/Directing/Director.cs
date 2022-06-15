@@ -100,7 +100,7 @@ namespace Unit04.Game.Directing
             for (int i = 0; i < 5; i++)
             {
                 // string text = ((char)random.Next(33, 34)).ToString();
-                string message = score;
+                //string message = score;
 
                 int x = random.Next(1, Program.COLS);
                 int y = random.Next(1, Program.ROWS);
@@ -124,7 +124,7 @@ namespace Unit04.Game.Directing
             for (int i = 0; i < 5; i++)
             {
                 // string text = ((char)random.Next(33, 34)).ToString();
-                string message = score;
+                //string message = score;
 
                 int x = random.Next(1, Program.COLS);
                 int y = random.Next(1, Program.ROWS);
