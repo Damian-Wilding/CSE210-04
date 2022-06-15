@@ -15,6 +15,7 @@ namespace Unit04.Game.Directing
     /// </summary>
     public class Director
     {
+        public int score = 0;
         private KeyboardService keyboardService = null;
         private VideoService videoService = null;
 
