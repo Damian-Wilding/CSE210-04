@@ -139,7 +139,7 @@ namespace Unit04.Game.Directing
                 Gem gem = new Gem();
                 gem.SetText("*");
                 gem.SetFontSize(Program.FONT_SIZE);
-                gem.SetVelocity(velocity);
+                gem.SetVelocity(Point(0, -1));
                 gem.SetColor(color);
                 gem.SetPosition(position);
                 // rock.SetMessage(message); //score
