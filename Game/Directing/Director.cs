@@ -115,7 +115,7 @@ namespace Unit04.Game.Directing
                 Rock rock = new Rock();
                 rock.SetText("0");
                 rock.SetFontSize(Program.FONT_SIZE);
-                rock.SetVelocity(Point(0, -1));
+                rock.SetVelocity(new Point(0, -1));
                 rock.SetColor(color);
                 rock.SetPosition(position);
                 // rock.SetMessage(message); //score
@@ -139,7 +139,7 @@ namespace Unit04.Game.Directing
                 Gem gem = new Gem();
                 gem.SetText("*");
                 gem.SetFontSize(Program.FONT_SIZE);
-                gem.SetVelocity(Point(0, -1));
+                gem.SetVelocity(new Point(0, -1));
                 gem.SetColor(color);
                 gem.SetPosition(position);
                 // rock.SetMessage(message); //score
