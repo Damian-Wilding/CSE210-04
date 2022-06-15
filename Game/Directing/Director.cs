@@ -83,7 +83,19 @@ namespace Unit04.Game.Directing
                     this.score = rock.SetScore(this.score, 1);
                     //banner.SetText(message);
                 }
-            } 
+            }
+
+            foreach (Actor actor in gems)
+            {
+                if (player.GetPosition().Equals(actor.GetPosition()))
+                {
+                    Gem gem = (Gem) actor;
+                    //int points = rock.GetPoints();
+                    this.score = gem.SetScore(this.score, 1);
+                    //banner.SetText(message);
+                }
+            }
+
             Random random = new Random();
             for (int i = 0; i < 5; i++)
             {
@@ -103,7 +115,7 @@ namespace Unit04.Game.Directing
                 Rock rock = new Rock();
                 rock.SetText("0");
                 rock.SetFontSize(Program.FONT_SIZE);
-                rock.SetVelocity(velocity);
+                rock.SetVelocity(Point(0, -1));
                 rock.SetColor(color);
                 rock.SetPosition(position);
                 // rock.SetMessage(message); //score
