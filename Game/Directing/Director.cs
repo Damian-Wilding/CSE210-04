@@ -74,15 +74,16 @@ namespace Unit04.Game.Directing
             int maxY = videoService.GetHeight();
             player.MoveNext(maxX, maxY);
 
-            // foreach (Actor actor in artifacts)
-            // {
-            //     if (robot.GetPosition().Equals(actor.GetPosition()))
-            //     {
-            //         Artifact artifact = (Artifact) actor;
-            //         string message = artifact.GetMessage();
-            //         banner.SetText(message);
-            //     }
-            // } 
+            foreach (Actor actor in rocks)
+            {
+                if (player.GetPosition().Equals(actor.GetPosition()))
+                {
+                    Artifact artifact = (Artifact) actor;
+                    int points = rock.GetPoints();
+                    rock.SetScore(this.score, -1);
+                    banner.SetText(message);
+                }
+            } 
             Random random = new Random();
             for (int i = 0; i < 5; i++)
             {
