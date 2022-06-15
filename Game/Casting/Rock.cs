@@ -20,6 +20,7 @@ namespace Unit04.Game.Casting
         public int SetScore(int points, int total)
         {
             total -= points;
+            return total;
         }
     }
 }
