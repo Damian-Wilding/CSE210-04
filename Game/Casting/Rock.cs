@@ -11,7 +11,7 @@ namespace Unit04.Game.Casting
         }
 
         
-        public string GetPoints()
+        public int GetPoints()
         {
             return points;
         }
