@@ -141,7 +141,10 @@ namespace Unit04.Game.Casting
             }
             this.text = text;
         }
-
+        public int SetNewScore(int score)
+        {
+            return score;
+        }
         /// <summary>
         /// Sets the actor's velocity to the given value.
         /// </summary>

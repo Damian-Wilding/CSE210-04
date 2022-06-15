@@ -69,7 +69,7 @@ namespace Unit04.Game.Directing
             List<Actor> rocks = cast.GetActors("rocks");
             List<Actor> gems = cast.GetActors("gems");
 
-            banner.SetText(score);
+            banner.SetNewScore(score);
             int maxX = videoService.GetWidth();
             int maxY = videoService.GetHeight();
             player.MoveNext(maxX, maxY);
