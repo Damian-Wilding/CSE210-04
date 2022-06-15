@@ -80,7 +80,7 @@ namespace Unit04.Game.Directing
                 {
                     Artifact artifact = (Artifact) actor;
                     int points = rock.GetPoints();
-                    rock.SetScore(this.score, -1);
+                    this.score = rock.SetScore(this.score, 1);
                     banner.SetText(message);
                 }
             } 
