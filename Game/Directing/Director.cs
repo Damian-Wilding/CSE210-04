@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using Unit04.Game.Casting;
 using Unit04.Game.Services;
+using System.IO;
+using System.Linq;
 //using Unit04.Game.Gem;
 //using Unit04.Game.Rock;
 
@@ -96,7 +98,7 @@ namespace Unit04.Game.Directing
                 }
             }
 
-            Random random = new Random();
+            System.Random random = new System.Random();
             for (int i = 0; i < 5; i++)
             {
                 // string text = ((char)random.Next(33, 34)).ToString();
@@ -120,6 +122,7 @@ namespace Unit04.Game.Directing
                 rock.SetPosition(position);
                 // rock.SetMessage(message); //score
                 cast.AddActor("rocks", rock);
+                rock.MoveNext(maxX, maxY);
             }
             for (int i = 0; i < 5; i++)
             {
