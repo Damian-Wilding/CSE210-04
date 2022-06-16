@@ -106,59 +106,69 @@ namespace Unit04.Game.Directing
             }
 
             System.Random random = new System.Random();
-            for (int i = 0; i < 1; i++)
+            // I don't think that it's good to have the game make a new rock and gem each game loop
+            // So I'm just gonna make it a new random value that determines if we are going to generate rocks and gems or not
+            int randoNumber = random.Next(0, 8);
+            if (randoNumber == 1)
             {
-                // string text = ((char)random.Next(33, 34)).ToString();
-                //string message = score;
+                for (int i = 0; i < 1; i++)
+                {
+                    // string text = ((char)random.Next(33, 34)).ToString();
+                    //string message = score;
 
-                int x = random.Next(1, Program.COLS);
-                int y = maxY;
-                Point position = new Point(x, y);
-                position = position.Scale(Program.CELL_SIZE);
+                    int x = random.Next(1, Program.COLS);
+                    int y = maxY;
+                    Point position = new Point(x, y);
+                    position = position.Scale(Program.CELL_SIZE);
 
-                int r = random.Next(0, 256);
-                int g = random.Next(0, 256);
-                int b = random.Next(0, 256);
-                Color color = new Color(r, g, b);
+                    int r = random.Next(0, 256);
+                    int g = random.Next(0, 256);
+                    int b = random.Next(0, 256);
+                    Color color = new Color(r, g, b);
 
-                Rock rock = new Rock();
-                rock.SetText("0");
-                rock.SetFontSize(Program.FONT_SIZE);
-                rock.SetVelocity(new Point(0, 1));
-                rock.SetColor(color);
-                rock.SetPosition(position);
-                // rock.SetMessage(message); //score
-                cast.AddActor("rocks", rock);
-                
+                    Rock rock = new Rock();
+                    rock.SetText("0");
+                    rock.SetFontSize(Program.FONT_SIZE);
+                    rock.SetVelocity(new Point(0, 1));
+                    rock.SetColor(color);
+                    rock.SetPosition(position);
+                    // rock.SetMessage(message); //score
+                    cast.AddActor("rocks", rock);
+
+                }
             }
-            for (int i = 0; i < 1; i++)
+
+            if (randoNumber == 2)
             {
-                // string text = ((char)random.Next(33, 34)).ToString();
-                //string message = score;
+                for (int i = 0; i < 1; i++)
+                {
+                    // string text = ((char)random.Next(33, 34)).ToString();
+                    //string message = score;
 
-                int x = random.Next(1, Program.COLS);
-                int y = maxY;
-                Point position = new Point(x, y);
-                position = position.Scale(Program.CELL_SIZE);
+                    int x = random.Next(1, Program.COLS);
+                    int y = maxY;
+                    Point position = new Point(x, y);
+                    position = position.Scale(Program.CELL_SIZE);
 
-                int r = random.Next(0, 256);
-                int g = random.Next(0, 256);
-                int b = random.Next(0, 256);
-                Color color = new Color(r, g, b);
+                    int r = random.Next(0, 256);
+                    int g = random.Next(0, 256);
+                    int b = random.Next(0, 256);
+                    Color color = new Color(r, g, b);
 
-                Gem gem = new Gem();
-                gem.SetText("*");
-                gem.SetFontSize(Program.FONT_SIZE);
-                gem.SetVelocity(new Point(0, 1));
-                gem.SetColor(color);
-                gem.SetPosition(position);
-                // rock.SetMessage(message); //score
-                cast.AddActor("gems", gem);
-            }
+                    Gem gem = new Gem();
+                    gem.SetText("*");
+                    gem.SetFontSize(Program.FONT_SIZE);
+                    gem.SetVelocity(new Point(0, 1));
+                    gem.SetColor(color);
+                    gem.SetPosition(position);
+                    // rock.SetMessage(message); //score
+                    cast.AddActor("gems", gem);
+                }
             //foreach (Actor actor in rocks)
             //{
             //    MoveNext(maxX, maxY);
             //}
+            }
         }
 
         /// <summary>

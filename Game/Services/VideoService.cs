@@ -80,7 +80,12 @@ namespace Unit04.Game.Services
         {
             foreach (Actor actor in actors)
             {
+                // gonna write some code here to get rid of actors if they go to the bottom of the screen
+                //if ( the actor has a y value of ymax) { then delete that actor from the list}
+                // Ignore this line for now... Im using it to troubleshoot      System.Console.WriteLine(actor);
                 DrawActor(actor);
+                
+
             }
         }
         
