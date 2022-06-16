@@ -14,7 +14,7 @@ namespace Unit04
     /// </summary>
     class Program
     {
-        public static int FRAME_RATE = 12;
+        public static int FRAME_RATE = 20;
         public static int MAX_X = 900;
         public static int MAX_Y = 600;
         public static int CELL_SIZE = 15;
@@ -49,7 +49,8 @@ namespace Unit04
             player.SetText("#");
             player.SetFontSize(FONT_SIZE);
             player.SetColor(WHITE);
-            player.SetPosition(new Point(MAX_X / 2, 0));
+            //not sure why I had to set the y value below to 585. 600 (maxY) just puts it back on the top of the screen.
+            player.SetPosition(new Point(MAX_X / 2, 585));
             cast.AddActor("player", player);
 
             // load the messages
