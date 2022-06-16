@@ -21,7 +21,7 @@ namespace Unit04
         public static int FONT_SIZE = 15;
         public static int COLS = 60;
         public static int ROWS = 40;
-        public static string CAPTION = "Robot Finds Kitten";
+        public static string CAPTION = "Greed";
         //private static string DATA_PATH = "Data/messages.txt";
         public static Color WHITE = new Color(255, 255, 255);
         //private static int DEFAULT_ARTIFACTS = 40;
@@ -49,7 +49,7 @@ namespace Unit04
             player.SetText("#");
             player.SetFontSize(FONT_SIZE);
             player.SetColor(WHITE);
-            player.SetPosition(new Point(0, MAX_Y / 2));
+            player.SetPosition(new Point(0, MAX_Y));
             cast.AddActor("player", player);
 
             // load the messages
