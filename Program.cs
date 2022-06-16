@@ -49,7 +49,7 @@ namespace Unit04
             player.SetText("#");
             player.SetFontSize(FONT_SIZE);
             player.SetColor(WHITE);
-            player.SetPosition(new Point(0, MAX_Y));
+            player.SetPosition(new Point(MAX_X / 2, 0));
             cast.AddActor("player", player);
 
             // load the messages
