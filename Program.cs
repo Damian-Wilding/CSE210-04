@@ -14,7 +14,7 @@ namespace Unit04
     /// </summary>
     class Program
     {
-        public static int FRAME_RATE = 20;
+        public static int FRAME_RATE = 60;
         public static int MAX_X = 900;
         public static int MAX_Y = 600;
         public static int CELL_SIZE = 15;
@@ -52,36 +52,6 @@ namespace Unit04
             //not sure why I had to set the y value below to 585. 600 (maxY) just puts it back on the top of the screen.
             player.SetPosition(new Point(MAX_X / 2, 585));
             cast.AddActor("player", player);
-
-            // load the messages
-            //List<string> messages = File.ReadAllLines(DATA_PATH).ToList<string>();
-
-            // create the artifacts
-// for now I think we won't need this part since the game loop is in charge of making the rocks and gems
-//            Random random = new Random();
-//            for (int i = 0; i < DEFAULT_ARTIFACTS; i++)
-//            {
-//                string text = ((char)random.Next(33, 126)).ToString();
-//                string message = messages[i];
-//
-//                int x = random.Next(1, COLS);
-//                int y = random.Next(1, ROWS);
-//                Point position = new Point(x, y);
-//                position = position.Scale(CELL_SIZE);
-//
-//                int r = random.Next(0, 256);
-//                int g = random.Next(0, 256);
-//                int b = random.Next(0, 256);
-//                Color color = new Color(r, g, b);
-//
-//                Artifact artifact = new Artifact();
-//                artifact.SetText(text);
-//                artifact.SetFontSize(FONT_SIZE);
-//                artifact.SetColor(color);
-//                artifact.SetPosition(position);
-//                artifact.SetMessage(message);
-//                cast.AddActor("artifacts", artifact);
-//            }
 
             // start the game
             KeyboardService keyboardService = new KeyboardService(CELL_SIZE);

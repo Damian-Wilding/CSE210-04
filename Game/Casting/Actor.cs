@@ -80,7 +80,7 @@ namespace Unit04.Game.Casting
         public void MoveNext(int maxX, int maxY)
         {
             int x = ((position.GetX() + velocity.GetX()) + maxX) % maxX;
-            int y = ((position.GetY() + velocity.GetY()) + maxY) % maxY;
+            int y = (position.GetY() + velocity.GetY());
             position = new Point(x, y);
         }
 
