@@ -38,7 +38,7 @@ namespace Unit04
 
             // create the banner
             Actor banner = new Actor();
-            banner.SetText("");
+            banner.SetText("0");
             banner.SetFontSize(FONT_SIZE);
             banner.SetColor(WHITE);
             banner.SetPosition(new Point(CELL_SIZE, 0));

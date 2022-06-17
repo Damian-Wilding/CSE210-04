@@ -18,6 +18,8 @@ namespace Unit04.Game.Casting
         private Point position = new Point(0, 0);
         private Point velocity = new Point(0, 0);
 
+        private int score; 
+
         /// <summary>
         /// Constructs a new instance of Actor.
         /// </summary>
@@ -141,9 +143,11 @@ namespace Unit04.Game.Casting
             }
             this.text = text;
         }
-        public int SetNewScore(int score)
+        public void SetNewScore(int score, int input)
         {
-            return score;
+            score += input;
+            //this.score = score;
+            //return score;
         }
         /// <summary>
         /// Sets the actor's velocity to the given value.

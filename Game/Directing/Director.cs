@@ -68,15 +68,19 @@ namespace Unit04.Game.Directing
             List<Actor> rocks = cast.GetActors("rocks");
             List<Actor> gems = cast.GetActors("gems");
             Actor player = cast.GetFirstActor("player");
+            Actor banner = cast.GetFirstActor("banner");
             foreach (Actor actor in rocks)
             {
                 //handles the score if the player touches a rock
                 if (player.GetPosition().Equals(actor.GetPosition()))
                 {
+                    //I'm sure this could be simplified by frick it, I've done enough.
                     Rock rock = (Rock) actor;
-                    //int points = rock.GetPoints();
-                    this.score = rock.SetScore(this.score, 1);
-                    //banner.SetText(message);
+                    System.Console.WriteLine(banner.GetText());
+                    int BannerAsINT = int.Parse(banner.GetText());
+                    int NewTotal = rock.SetScore(BannerAsINT);
+                    string NewTotalAsString = NewTotal.ToString();
+                    banner.SetText(NewTotalAsString);
                     cast.RemoveActor("rocks", actor);
                 }
             }
@@ -86,9 +90,11 @@ namespace Unit04.Game.Directing
                 if (player.GetPosition().Equals(actor.GetPosition()))
                 {
                     Gem gem = (Gem) actor;
-                    //int points = rock.GetPoints();
-                    this.score = gem.SetScore(this.score, 1);
-                    //banner.SetText(message);
+                    System.Console.WriteLine(banner.GetText());
+                    int BannerAsINT = int.Parse(banner.GetText());
+                    int NewTotal = gem.SetScore(BannerAsINT);
+                    string NewTotalAsString = NewTotal.ToString();
+                    banner.SetText(NewTotalAsString);
                     cast.RemoveActor("gems", actor);
                 }
             }
@@ -189,21 +195,22 @@ namespace Unit04.Game.Directing
         /// <param name="cast">The given cast.</param>
         private void DoUpdates(Cast cast)
         {
-            Actor banner = cast.GetFirstActor("banner");
+            //Actor banner = cast.GetFirstActor("banner");
             Actor player = cast.GetFirstActor("player");
             
             List<Actor> rocks = cast.GetActors("rocks");
             List<Actor> gems = cast.GetActors("gems");
 
-            banner.SetNewScore(score);
+            //banner.SetNewScore(score, );
             int maxX = videoService.GetWidth();
             int maxY = videoService.GetHeight();
             player.MoveNext(maxX, maxY);
-            //rock.Movenext()
+           
             moveGemsandRocks(cast);
             HandleCollision(cast);
             HandleOutOfScreenActors(cast);
             SpawnNewRocksAndGems(cast);
+            //System.Console.WriteLine(score);
         }
 
         /// <summary>

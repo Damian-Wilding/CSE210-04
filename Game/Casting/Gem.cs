@@ -17,7 +17,7 @@ namespace Unit04.Game.Casting
         }
 
         
-        public int SetScore(int points, int total)
+        public int SetScore(int total)
         {
             total += points;
             return total;
